@@ -1,3 +1,5 @@
+alert("Javascript is working!");
+
 const roles = [
 "Technical Support Engineer",
 "PC Builder",
@@ -40,13 +42,17 @@ setTimeout(type,300);
 
 type();
 
+/*
 const sections = document.querySelectorAll("section");
+console.log(sections);
 
 const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
         if(entry.isIntersecting){
+
+            console.log("Showing", entry.target.id || entry.target.className);
 
             entry.target.classList.add("show");
 
@@ -61,3 +67,4 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
+*/
