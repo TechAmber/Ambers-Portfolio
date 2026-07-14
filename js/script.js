@@ -1,4 +1,3 @@
-alert("Javascript is working!");
 
 const roles = [
 "Technical Support Engineer",
@@ -6,7 +5,6 @@ const roles = [
 "Problem Solver",
 "Aspiring Games Industry Professional"
 ];
-
 
 let role = 0;
 let character = 0;

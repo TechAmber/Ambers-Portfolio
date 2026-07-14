@@ -10,7 +10,7 @@
 /* Google Font */
 body {
     margin: 0;
-    background: #0D1117;
+    background: radial-gradient(circle at top, #1a1033 0%, #0D1117 45%);
     color: #F5F5F5;
     font-family: 'Poppins', sans-serif;
 }
@@ -23,26 +23,50 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 16px 42px;
+    animation: fadeIn 1.5s ease;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* name */
 h1 {
     font-size: 4rem;
     margin: 0;
     color: #BB86FC;
+    text-shadow:
+        0 0 10px rgba(187, 134, 252, .6),
+        0 0 30px rgba(187, 134, 252, .3);
 }
 
+/* role */
 h2 {
     font-weight: 400;
     color: #00E5FF;
 }
 
+/* bio */
 p {
     max-width: 700px;
     color: #BFBFBF;
     line-height: 1.8;
 }
 
+/* work status */
+.status {
+    color: #00E5FF;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+/* Buttons */
 a {
     padding: 15px 40px;
     border-radius: 8px;
@@ -59,18 +83,8 @@ a:hover {
     box-shadow: 0 0 20px var(--cyan);
 }
 
-.hero {
-    animation: fadeIn 1.5s ease;
-}
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
+/* Fade In Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -83,7 +97,7 @@ a:hover {
     }
 }
 
-
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -116,6 +130,9 @@ nav a {
     padding: 0;
     color: white;
     box-shadow: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
@@ -124,7 +141,7 @@ nav a:hover {
     transform: none;
 }
 
-
+/* About Section */
 .about {
     padding: 100px 15%;
     background: #161B22;
@@ -140,7 +157,7 @@ nav a:hover {
     line-height: 2;
 }
 
-
+/* Skills Section */
 .skills {
     padding: 100px 10%;
 }
@@ -151,7 +168,7 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
-
+/* Cards Section */
 .cards {
     display: flex;
     gap: 25px;
@@ -180,12 +197,13 @@ nav a:hover {
     color: #BB86FC;
 }
 
+/* Typing Animation */
 #typing {
     color: #00E5FF;
     text-shadow: 0 0 15px #00E5FF;
 }
 
-
+/* Buttons Section */
 .buttons {
     display: flex;
     justify-content: center;
@@ -204,7 +222,7 @@ nav a:hover {
     color: white;
 }
 
-
+/* Timeline Section */
 .timeline {
     padding: 100px 10%;
     background: #161B22;
@@ -253,6 +271,7 @@ nav a:hover {
     margin-top: 0;
 }
 
+/* Projects Section */
 .projects {
     padding: 100px 10%;
 }
@@ -307,6 +326,17 @@ nav a:hover {
 section.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Section Divider */
+section::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #00E5FF;
+    margin: 0 auto 40px;
+    box-shadow: 0 0 15px #00E5FF;
 }
 
 html {
@@ -377,7 +407,7 @@ footer {
     background: #BB86FC;
 }
 
-
+/* Contact Section */
 .contact {
     padding: 100px 10%;
     background: #161B22;
