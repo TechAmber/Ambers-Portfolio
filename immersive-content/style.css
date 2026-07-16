@@ -1,0 +1,37 @@
+body {
+    background: #0D1117;
+    color: white;
+    font-family: Poppins, sans-serif;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #BB86FC;
+}
+
+#experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.experience-card{
+background:#161B22;
+border-radius:20px;
+padding:35px;
+margin:40px auto;
+max-width:900px;
+border:1px solid #2d333b;
+}
+
+.experience-card:hover{
+box-shadow:
+0 0 30px rgba(187,134,252,.5);
+transform:translateY(-5px);
+}
+
+.skills-list{
+color:#00E5FF;
+}

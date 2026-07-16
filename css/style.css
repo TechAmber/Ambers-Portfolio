@@ -17,13 +17,12 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 16px 42px;
+    padding: 80px 42px;
     animation: fadeIn 1.5s ease;
 }
 
@@ -33,6 +32,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.hero-divider{
+    width:120px;
+    height:4px;
+    margin:0 auto 30px;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--cyan),
+        transparent
+    );
+    box-shadow:0 0 20px var(--cyan);
 }
 
 /* name */
@@ -109,7 +122,7 @@ nav {
     top: 0;
     width: 100%;
     box-sizing: border-box;
-
+    
     background: rgba(13, 17, 23, .85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, .08);
@@ -329,15 +342,16 @@ section.show {
 }
 
 /* Section Divider */
-section::before {
+section:not(.hero):before {
     content: "";
     display: block;
     width: 80px;
     height: 3px;
     background: #00E5FF;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px auto;
     box-shadow: 0 0 15px #00E5FF;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -419,6 +433,13 @@ footer {
     font-size: 2.5rem;
 }
 
+.contact p {
+    color: #BFBFBF;
+    font-size: 1.2rem;
+    line-height: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
 .contact-cards {
     display: flex;
     justify-content: center;
@@ -443,4 +464,8 @@ footer {
 
 .contact-card h3 {
     color: #00E5FF;
+}
+
+section {
+    overflow: hidden;
 }
