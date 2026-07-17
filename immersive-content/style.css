@@ -1,15 +1,3 @@
-body {
-    background: #0D1117;
-    color: white;
-    font-family: Poppins, sans-serif;
-    padding: 50px;
-}
-
-h1 {
-    text-align: center;
-    color: #BB86FC;
-}
-
 #experience-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -34,4 +22,21 @@ transform:translateY(-5px);
 
 .skills-list{
 color:#00E5FF;
+}
+
+.back-button{
+display:inline-block;
+margin:40px;
+padding:15px 35px;
+background:#BB86FC;
+color:white;
+border-radius:8px;
+text-decoration:none;
+transition:.3s;
+}
+
+.back-button:hover{
+background:#00E5FF;
+color:#0D1117;
+box-shadow:0 0 20px #00E5FF;
 }

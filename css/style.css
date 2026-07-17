@@ -80,7 +80,7 @@ p {
 }
 
 /* Buttons */
-a {
+a{
     padding: 15px 40px;
     border-radius: 8px;
     text-decoration: none;
@@ -122,7 +122,6 @@ nav {
     top: 0;
     width: 100%;
     box-sizing: border-box;
-    
     background: rgba(13, 17, 23, .85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, .08);
@@ -423,21 +422,22 @@ footer {
 
 /* Contact Section */
 .contact {
-    padding: 100px 10%;
+    padding: 8%;
     background: #161B22;
     text-align: center;
 }
 
 .contact h2 {
     color: #BB86FC;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin:auto;
 }
 
 .contact p {
     color: #BFBFBF;
     font-size: 1.2rem;
     line-height: 2;
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
 }
 .contact-cards {
@@ -446,6 +446,7 @@ footer {
     gap: 25px;
     flex-wrap: wrap;
     margin-top: 50px;
+
 }
 
 .contact-card {
@@ -464,6 +465,24 @@ footer {
 
 .contact-card h3 {
     color: #00E5FF;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #BB86FC;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.contact-button:hover {
+    background: #00E5FF;
+    color: #0D1117;
+    box-shadow: 0 0 20px #00E5FF;
 }
 
 section {
