@@ -5,10 +5,28 @@
     justify-content: center;
     text-align: center;
     padding-top: 120px;
+    animation: fadeIn 1.5s ease;
 }
 
 .hero-content {
-    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        max-width: 850px;
+}
+
+.hero-divider {
+    width: 120px;
+    height: 4px;
+    margin: 0 auto 30px;
+    border-radius: 999px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--cyan),
+            transparent);
+    box-shadow: 0 0 20px var(--cyan);
 }
 
 .hero-avatar img {
@@ -92,4 +110,245 @@
     font-size: .85rem;
     color: var(--grey);
 }
+/*profile pic */
+.hero-avatar {
+    margin-bottom: 35px;
+}
 
+.hero-avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid var(--purple);
+    box-shadow:
+        0 0 30px rgba(187, 134, 252, .5),
+        0 0 60px rgba(0, 229, 255, .2);
+    transition: .4s;
+}
+
+.hero-avatar img:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 40px rgba(187, 134, 252, .7),
+        0 0 70px rgba(0, 229, 255, .4);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.logo img {
+    width: 42px;
+    filter:
+        drop-shadow(0 0 10px var(--cyan));
+}
+
+
+/* name */
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #BB86FC;
+    text-shadow:
+        0 0 10px rgba(187, 134, 252, .6),
+        0 0 30px rgba(187, 134, 252, .3);
+}
+
+/* role */
+h2 {
+    font-weight: 400;
+    color: #00E5FF;
+}
+
+/* bio */
+p {
+    max-width: 700px;
+    color: #BFBFBF;
+    line-height: 1.8;
+}
+
+/* work status */
+.status {
+    color: #00E5FF;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+
+/* About Section */
+.about {
+    padding: 100px 15%;
+    background: #161B22;
+}
+
+.about h2 {
+    color: #BB86FC;
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 2;
+
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 100px 10%;
+}
+
+.skills h2 {
+    text-align: center;
+    color: #00E5FF;
+    margin-bottom: 50px;
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 100px 10%;
+    background: #161B22;
+}
+
+.timeline h2 {
+    text-align: center;
+    color: #BB86FC;
+    margin-bottom: 60px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.timeline-icon {
+    font-size: 2rem;
+    background: #BB86FC;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    background: #0D1117;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    transition: .3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 25px #00E5FF;
+}
+
+.timeline-content h3 {
+    color: #00E5FF;
+    margin-top: 0;
+}
+
+/* Projects Section */
+.featured-project-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    background: #161B22;
+    border: 1px solid #2d333b;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 50px;
+    transition: .3s;
+}
+
+.featured-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(0, 229, 255, .25);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project-info h3 {
+    color: #BB86FC;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.quests {
+    padding: 100px 10%;
+}
+
+.quests h2 {
+    text-align: center;
+    color: #BB86FC;
+    margin-bottom: 50px;
+}
+
+.quest-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.quest-card {
+    background: #161B22;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #2d333b;
+    transition: .3s;
+}
+
+.quest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00E5FF;
+}
+
+.quest-card h3 {
+    color: #00E5FF;
+}
+
+.quest-card p {
+    font-size: .9rem;
+    color: #BB86FC;
+}
+
+/* Contact Section */
+.contact {
+    padding: 8%;
+    background: #161B22;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #BB86FC;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.contact p {
+    color: #BFBFBF;
+    font-size: 1.2rem;
+    line-height: 2;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.complete {
+    background: #BB86FC;
+}
