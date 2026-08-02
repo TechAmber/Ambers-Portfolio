@@ -1,12 +1,3 @@
-:root {
-    --bg: #0D1117;
-    --card: #161B22;
-    --purple: #BB86FC;
-    --cyan: #00E5FF;
-    --white: #F5F5F5;
-    --grey: #BFBFBF;
-}
-
 /* Google Font */
 body {
     margin: 0;
@@ -110,45 +101,85 @@ a:hover {
 
 /* Navigation Bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 18px 60px;
     position: fixed;
     top: 0;
     width: 100%;
-    box-sizing: border-box;
-    background: rgba(13, 17, 23, .85);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(13, 17, 23, .8);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
     z-index: 1000;
 }
 
-nav h3 {
-    color: #BB86FC;
-}
-
-nav div {
+.logo {
     display: flex;
-    gap: 25px;
-}
-
-nav a {
-    background: none;
-    padding: 0;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
     color: white;
-    box-shadow: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
-nav a:hover {
-    background: none;
-    color: #00E5FF;
-    transform: none;
+.logo img {
+    width: 42px;
+    filter:
+        drop-shadow(0 0 10px var(--cyan));
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: var(--cyan);
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--cyan);
+    transition: .3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/*profile pic */
+.hero-avatar {
+    margin-bottom: 35px;
+}
+
+.hero-avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid var(--purple);
+    box-shadow:
+        0 0 30px rgba(187, 134, 252, .5),
+        0 0 60px rgba(0, 229, 255, .2);
+    transition: .4s;
+}
+
+.hero-avatar img:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 40px rgba(187, 134, 252, .7),
+        0 0 70px rgba(0, 229, 255, .4);
 }
 
 /* About Section */
@@ -165,8 +196,9 @@ nav a:hover {
 .about p {
     font-size: 1.2rem;
     line-height: 2;
-    
+
 }
+
 
 /* Skills Section */
 .skills {
@@ -223,14 +255,15 @@ nav a:hover {
     margin-top: 35px;
 }
 
-.secondary {
-    background: transparent;
-    border: 2px solid #BB86FC;
+.secondary{
+background:transparent;
+border:1px solid var(--purple);
 }
 
-.secondary:hover {
-    background: #BB86FC;
-    color: white;
+
+.secondary:hover{
+background:var(--purple);
+color:white;
 }
 
 /* Timeline Section */
@@ -348,13 +381,23 @@ section.show {
 
 /* Section Divider */
 section:not(.hero):before {
-    content: "";
+
+    content: "◇";
+
     display: block;
-    width: 80px;
-    height: 3px;
-    background: #00E5FF;
-    margin: 0 auto 50px auto;
-    box-shadow: 0 0 15px #00E5FF;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    color: var(--cyan);
+
+    margin-bottom: 40px;
+
+    text-shadow:
+        0 0 10px var(--cyan),
+        0 0 25px var(--purple);
+
 }
 
 

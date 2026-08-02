@@ -1,0 +1,95 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-avatar img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--purple);
+    box-shadow:
+        0 0 30px rgba(187, 134, 252, .5),
+        0 0 70px rgba(0, 229, 255, .2);
+}
+
+.hero-intro {
+    margin-top: 30px;
+    letter-spacing: 5px;
+    color: var(--cyan);
+    font-size: .9rem;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin: 10px 0;
+    color: white;
+    text-shadow:
+        0 0 20px rgba(187, 134, 252, .5);
+}
+
+.hero h2 {
+    min-height: 45px;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 1.1rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: rgba(0, 229, 255, .08);
+    border: 1px solid rgba(0, 229, 255, .3);
+    color: var(--cyan);
+    font-size: .85rem;
+    letter-spacing: 1px;
+}
+
+.status-badge span {
+    width: 10px;
+    height: 10px;
+    background: #00ff88;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00ff88;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.hero-stats div {
+    background: rgba(22, 27, 34, .7);
+    border: 1px solid var(--border);
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.hero-stats strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.hero-stats span {
+    font-size: .85rem;
+    color: var(--grey);
+}
+
